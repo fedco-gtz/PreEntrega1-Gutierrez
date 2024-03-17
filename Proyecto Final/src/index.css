@@ -111,6 +111,9 @@ header .text {
   width: 90px;
   height: 40px;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cartWidget img {
@@ -125,4 +128,9 @@ header .text {
 
 .cartWidget:hover {
   background-color: rgba(212, 255, 64, 0.87);
+}
+
+.cartWidget .cardNumber {
+  color:  #242424;
+  font-size: 24px;
 }
