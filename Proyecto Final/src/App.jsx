@@ -15,7 +15,7 @@ function App() {
       <div>
       <NavBar />
       <Header />
-      <Catalogue greeting={'¡Bienvenido a nuestra tienda!'}/>
+      <Catalogue greeting={'CATÁLOGO'}/>
       <Footer />
       </div>
     </>

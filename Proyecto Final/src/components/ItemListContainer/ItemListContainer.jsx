@@ -2,19 +2,21 @@ import React from 'react';
 
 function ItemListContainer({ greeting }) {
     const catalogo = [
-        { id: 1, nombre: 'Producto 1', precio: 10 },
-        { id: 2, nombre: 'Producto 2', precio: 20 },
-        { id: 3, nombre: 'Producto 3', precio: 30 },
+        { id: 1, informacion: 'Colección Jordan', nombre: 'Air Jordan 1 Retro High OG', descripcion: 'Zapatillas Jordan Unisex', precio: 349.999 },
+        { id: 2, informacion: 'Colección Jordan', nombre: 'Air Jordan 1 Low OG', descripcion: 'Zapatillas Jordan para Mujer', precio: 259.999 },
+        { id: 3, informacion: 'Colección Jordan', nombre: 'Jordan Play', descripcion: 'Sandalias Jordan para Hombre', precio: 77.999 },
     ];
 
     return (
         <div>
-            <h1> {greeting} </h1>
-            <h2>Catálogo de la tienda:</h2>
-            <ul>
+            <h1 className='tittleCatalogue'> {greeting} </h1>
+            <ul className='list'>
                 {catalogo.map(producto => (
-                    <li key={producto.id}>
-                        <span>{producto.nombre}</span> - <span>${producto.precio}</span>
+                    <li className='product' key={producto.id}>
+                        <li>{producto.informacion}</li> 
+                        <li>{producto.nombre}</li> 
+                        <li>{producto.descripcion}</li> 
+                        <li>${producto.precio}</li>
                     </li>
                 ))}
             </ul>
