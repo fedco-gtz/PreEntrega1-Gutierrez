@@ -1,9 +1,11 @@
+ /* Estilos generales */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
 
+ /* Estilos barra de navegación */
 .navbar {
   background-color: #242424;
   text-align: center;
@@ -31,6 +33,7 @@
   border-bottom-color: rgba(212, 255, 64, 0.87);
 }
 
+ /* Estilos encabezado */
 .header {
   background-image: url("./images/headerImage.jpg");
   background-size: cover;
@@ -58,6 +61,7 @@ header .text {
   text-align: center;
 }
 
+ /* Estilos pie de página */
 .footer {
   background-color: #242424;
   margin-top: 20px;
@@ -76,20 +80,24 @@ header .text {
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  vertical-align: middle;
 }
 
 .footerSection img {
   margin-top: 50px;
+  vertical-align: middle;
 }
 
 .footerSection p {
   color: rgb(242, 242, 242);
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .footerSection a {
   color: rgb(242, 242, 242);
   padding-bottom: 10px;
+  vertical-align: middle;
 }
 
 .footerSection a:hover {
@@ -101,6 +109,7 @@ header .text {
   margin-top: 5px;
   text-decoration: none;
   width: 20px;
+  vertical-align: middle;
 }
 
 .socialIcon {
@@ -108,6 +117,7 @@ header .text {
   height: auto;
 }
 
+ /* Estilos carrito de compras */
 .cartWidget {
   background-color: rgba(255, 255, 255, 0.87);
   width: 90px;
@@ -137,6 +147,7 @@ header .text {
   font-size: 24px;
 }
 
+ /* Estilos catálogo */
 .tittleCatalogue {
   text-align: center;
   margin-top: 10px;
@@ -183,4 +194,53 @@ header .text {
   font-size: 18px;
   text-align: center;
   margin-top: 12%;
+}
+
+ /* Estilos responsive mobile/tablet */
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .header .logo {
+    width: 70%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .header .caption {
+    display: none;
+  }
+
+  header .text {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .footer {
+    background-color: #242424;
+    margin-top: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 10px;
+  }
+
+  .footerSection img {
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
