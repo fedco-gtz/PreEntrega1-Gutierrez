@@ -12,12 +12,10 @@ function App() {
 
   return (
     <>
-      <div>
       <NavBar />
       <Header />
       <Catalogue greeting={'CATÁLOGO'}/>
       <Footer />
-      </div>
     </>
   )
 }
