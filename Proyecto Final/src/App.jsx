@@ -1,20 +1,20 @@
-import { useState } from 'react'
 import './App.css'
 
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Catalogue from './components/ItemListContainer/ItemListContainer';
-
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount/ItemCount';
+import OfficialStore from './components/OfficialStore/OfficialStore';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NavBar />
       <Header />
-      <Catalogue greeting={'CATÁLOGO'}/>
+      <ItemListContainer greeting={'CATÁLOGO'}/>
+      <ItemCount initial = {1} stock = {10} onAdd = {(quantity) => console.log('Cantidad agregada', quantity)}/>
+      <OfficialStore />
       <Footer />
     </>
   )

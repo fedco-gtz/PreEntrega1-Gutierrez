@@ -1,5 +1,4 @@
 import React from 'react';
-import nike from '../../images/nike.png';
 
 function ItemListContainer({ greeting }) {
     const catalogo = [
@@ -21,8 +20,6 @@ function ItemListContainer({ greeting }) {
                     </li>
                     ))}
             </ul>
-            <h3 className='store'>TIENDA OFICIAL</h3>
-            <a className='store' href="https://www.nike.com.ar/" target="_blank"><img alt='Nike' src={nike} /></a>
         </>
     );
 }
