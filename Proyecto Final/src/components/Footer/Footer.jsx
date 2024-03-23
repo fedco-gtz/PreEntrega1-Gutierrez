@@ -1,4 +1,11 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/Footer.css'
+// |----------| //
+// | Imágenes | //
+// |----------| //
 import logo from '../../images/logo.png';
 import facebook from '../../images/Facebook.png';
 import x from '../../images/X.png';

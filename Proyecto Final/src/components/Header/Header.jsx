@@ -1,4 +1,11 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/Header.css'
+// |----------| //
+// | Imágenes | //
+// |----------| //
 import logo from '../../images/logo.png';
 
 function Header() {

@@ -1,4 +1,11 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/OfficialStore.css'
+// |----------| //
+// | Imágenes | //
+// |----------| //
 import nike from '../../images/nike.png';
 
 function OfficialStore() {

@@ -1,4 +1,11 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/CartWidget.css'
+// |----------| //
+// | Imágenes | //
+// |----------| //
 import cart from '../../images/cart.png';
 
 function CartWidget() {

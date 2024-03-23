@@ -1,4 +1,8 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/ItemListContainer.css'
 
 function ItemListContainer({ greeting }) {
     const catalogo = [

@@ -1,4 +1,11 @@
 import React from 'react';
+// |-------------| //
+// | Estilos CSS | //
+// |-------------| //
+import '../../styles/NavBar.css'
+// |-------------| //
+// | Componentes | //
+// |-------------| //
 import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
