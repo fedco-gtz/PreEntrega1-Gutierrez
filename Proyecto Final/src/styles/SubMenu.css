@@ -1,24 +1,22 @@
-.navbar {
-    background-color: rgb(36, 36, 36);
+.submenu {
+    background-color: rgba(36, 36, 36, 0.6);
+    position:absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px;    
     text-align: center;
     font-weight: bold;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar ul li a {
+.submenu li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.87);
 }
 
-.navbar ul li a:hover {
+.submenu li a:hover {
     text-decoration: none;
     color: rgba(212, 255, 64, 0.87);
     border-bottom-style: solid;
@@ -27,13 +25,10 @@
 
 /* Estilos responsive mobile/tablet */
 @media screen and (min-width:320px) and (max-width: 768px) {
-    .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 10px;
+    .submenu {
         font-size: 14px;
+        margin-left: -10px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-evenly;
     }
 }
