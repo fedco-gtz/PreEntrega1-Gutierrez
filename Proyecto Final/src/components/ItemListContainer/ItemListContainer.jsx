@@ -22,7 +22,7 @@ function ItemListContainer({ greeting }) {
                         <li>{producto.descripcion}</li>
                         <li>${producto.precio}</li>
                     </li>
-                    ))}
+                ))}
             </ul>
         </>
     );
